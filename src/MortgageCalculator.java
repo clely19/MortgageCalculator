@@ -64,6 +64,3 @@ public class MortgageCalculator {
 }
 
 
-/*Problem 1: INPUT VALIDATION
-             If we enter a non-numeric value or a negative value, the code will not function
-             Hence, we need to use conditional functions*/
