@@ -1,4 +1,5 @@
 import java.text.NumberFormat;
+import java.util.Locale;
 import java.util.Scanner;
 public class MortgageCalculator {
     public static void main(String[] args){
@@ -58,7 +59,7 @@ public class MortgageCalculator {
         double mortgage = principal
                 * (monthlyInterest*(Math.pow(1+monthlyInterest, noOfPayments)))
                 /((Math.pow(1+monthlyInterest, noOfPayments))-1);
-        String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
+        String mortgageFormatted = NumberFormat.getCurrencyInstance(Locale.US).format(mortgage);
         System.out.println("Mortgage: " + mortgageFormatted);
     }
 }
